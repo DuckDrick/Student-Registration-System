@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Perziura">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#meniu" text="Meniu" />
+      <TableView fx:id="table" layoutX="14.0" layoutY="186.0" prefHeight="200.0" prefWidth="573.0">
+        <columns>
+          <TableColumn fx:id="vardas" prefWidth="103.0" text="Vardas" />
+          <TableColumn fx:id="pavarde" prefWidth="94.0" text="Pavardė" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="cGroup" layoutX="14.0" layoutY="152.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="135.0" text="Grupė:" />
+      <DatePicker fx:id="nuo" layoutX="213.0" layoutY="152.0" />
+      <DatePicker fx:id="iki" layoutX="412.0" layoutY="152.0" />
+      <Label layoutX="213.0" layoutY="135.0" text="Nuo" />
+      <Label layoutX="412.0" layoutY="135.0" text="Iki" />
+      <Button layoutX="499.0" layoutY="14.0" mnemonicParsing="false" onAction="#savepdf" text="Išsaugoti PDF" />
+   </children>
+</AnchorPane>

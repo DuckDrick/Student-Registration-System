@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Lankomumas">
+   <children>
+      <ChoiceBox fx:id="cGroup" layoutX="86.0" layoutY="101.0" prefWidth="150.0" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#meniu" text="Meniu" />
+      <TableView fx:id="tv" layoutX="315.0" layoutY="14.0" prefHeight="380.0" prefWidth="271.0">
+        <columns>
+          <TableColumn fx:id="vardas" prefWidth="106.0" text="Vardas" />
+          <TableColumn fx:id="pavarde" prefWidth="118.0" text="Pavardė" />
+            <TableColumn fx:id="check" minWidth="5.0" prefWidth="46.0" text="N" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="data" layoutX="74.0" layoutY="175.0" />
+      <Button layoutX="93.0" layoutY="256.0" mnemonicParsing="false" onAction="#saveDates" prefHeight="59.0" prefWidth="137.0" text="Išsaugoti">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="104.0" layoutY="337.0" mnemonicParsing="false" onAction="#clear" prefHeight="18.0" prefWidth="114.0" text="Išvalyti datą" />
+   </children>
+</AnchorPane>
